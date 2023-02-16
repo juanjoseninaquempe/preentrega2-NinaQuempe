@@ -1,0 +1,262 @@
+.cabezera {
+    background-color: rgb(92, 71, 71);
+}
+
+
+.titulo {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+}
+a {
+    color: black;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Aboreto', cursive;
+   
+}
+
+body {
+    font-family: cursive;
+    background-color: rgb(46, 43, 43);
+}
+
+.paginas {
+    list-style: lower-greek;
+}
+
+/* aca empieza el archivo contacto */
+
+.cont{
+    list-style-type: circle;
+
+}
+
+
+
+/* modificamos con tipografias + box-modeling el archivo contacto */
+
+.otraletra {
+         font-family: 'Aboreto', cursive;
+         background-color: aliceblue;
+}
+
+.caja-1 {
+    border: dashed 2px rgb(49, 44, 17);
+    display: inline-block;
+    background-color: rgb(172, 117, 45);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 100px;
+    width: 400px;
+   
+}
+
+.titulo1 {
+
+    text-decoration:none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.cont li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    font-size: 2rem;
+}
+
+.boton1 {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.opciones {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* modificamos galeria  */
+
+/* parallax */
+
+.autos {
+	/* Imagen elegida */
+	background-image: url("../multimedia/img/210427134741-cnne-dinero-tesla-04272021-full-169.jpg");
+
+	/* Definir un alto específico */
+	height: 700px;
+
+	/* Crear el efecto parallax al scrollear */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/* box modeling */
+	padding: 50px 30px;
+	margin-bottom: 50px;
+}
+
+.logo1 {
+    text-align: end;
+}
+
+.energia {
+	/* Imagen elegida */
+	background-image: url("../multimedia/img/descarga\ \(1\).jpeg");
+
+	/* Definir un alto específico */
+	height: 700px;
+
+	/* Crear el efecto parallax al scrollear */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/* box modeling */
+	padding: 50px 30px;
+	margin-bottom: 50px;
+    
+    /* definir color de letra */
+    color: aliceblue;
+}
+
+/* modificamos Sobre-nosotros */
+
+.info {
+    font-size: larger;
+	padding: 10px 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+#video {
+    display: block;
+    margin: 50px;
+   
+}
+
+.logo {
+    text-align: end;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+}
+
+/* modificando pagina de dificultades  */
+
+.descripcion-titulo {
+    background-color: rgb(173, 73, 73);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 5, 1);
+}
+
+.causas-desarrollo {
+    background-color: blueviolet;
+    background-image: url(../multimedia/img/imagen-problemas.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+    color: bisque;
+}
+
+/* segunda preentrega */
+
+/* aplicando boostrap a contacto */
+
+.menu-desplegable {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.slide {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+/* aplicando boostrap,flexbox,responsive a sobre-nosotros */
+
+.pagina-nosotros {
+    background-color: antiquewhite;
+}
+
+/* grid-sobre-nosotros */
+
+/* -------------------------------- GALERIA.HTML -------------------------------- */
+/* ~~~~~ MAIN ~~~~~ */
+.div_tesla-galeria{
+    padding: 10px;
+}
+
+.div_tesla-galeria h1{
+    text-align: center;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    position: relative;
+    background-color: white;
+}
+/* 
+.div_argentina_title h1:hover{
+    background-color: darkcyan;
+} */
+
+.div_tesla_section{
+    /* padding: 10px; */
+    /* margin: 10px; */
+    height: auto;
+
+    /* -+- Propiedades de la caja -+- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}   
+
+
+.tesla_section_caja{
+    flex-grow: 3;
+}
+
+.tesla_section_caja img{
+    object-fit: cover;
+    width: 100%;
+    height: 100% ;
+}
+
+/* ~ CAJA HIJOS ~ */
+.caja{
+    width: 120px;
+    height: 250px;
+    margin: 5px;
+}
+
+/* mediaqueries contacto */
+
+@media  screen and (min-width:960px)and (max-width:1328px) {
+    .otraletra {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
+        color: aliceblue;
+    }
+}
+
+/* mediaqueries sobre-nosotros */
+@media  screen and (min-width:0px)and (max-width:480px) {
+    .pagina-nosotros {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: black;
+        background-image: url(../multimedia/img/fondo-2.jpeg);
+        color: rgb(44, 70, 61);
+    }
+}

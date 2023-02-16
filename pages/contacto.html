@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
+
+    <!-- link google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <!-- linkear nuestro css -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>tienda - contacto</title>
+</head>
+
+<body class="otraletra">
+    <!-- boostrap-contacto-->
+    <div class="menu-desplegable">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="./galeria.html">Galeria</a></li>
+            <li><a class="dropdown-item" href="./sobre-nosotros.html">Sobre-nosotros</a></li>
+            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+            <li><a class="dropdown-item" href="./dificultades.html">Dificultades</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <h1 class="display-3">Contactanos</h1>
+
+        <form>
+
+            <div>
+                <label class="h4" for="nombre">Inserte su nomnbre : </label>
+                <input type="text" name="nombre" id="nombre" placeholder="nina quempe">
+            </div>
+
+            <!-- boostrap de email -->
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div>
+                <textarea class="caja-1" cols="30" rows="30"></textarea>
+            </div>
+            <div>
+                <p class="h4">seleccione su genero : </p>
+                <label for="genero"> Masculino </label>
+                <input type="radio" name="genero" id="genero" value="M">
+                <label for="genero"> Femenino </label>
+                <input type="radio" name="genero" id="genero" value="F">
+                <label for="genero"> X </label>
+                <input type="radio" name="genero" id="genero" value="X">
+            </div>
+
+            <label class="opciones h4" for="select">seleccione su pais: </label>
+            <div>
+                <select name="select" id="select">
+                    <option value="argentina">argentina</option>
+                    <option value="argentina">brazil</option>
+                    <option value="argentina">mexico</option>
+                </select>
+            </div>
+
+            <div>
+                <input class="boton1" type="submit" value="enviar consulta">
+                <input type="reset" value="limpiar todo">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; juan jose nina quempe</p>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="../multimedia/img/icons8-instagram.gif" class="d-block w-100" alt="logoinstagram">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../multimedia/img/icons8-whatsapp-50.png" class="d-block w-100" alt="logowhatsapp">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../multimedia/img/icons8-facebook-nuevo-50.png" class="d-block w-100"
+                            alt="logofacebook">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </footer>
+
+
+    <script src="../boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
