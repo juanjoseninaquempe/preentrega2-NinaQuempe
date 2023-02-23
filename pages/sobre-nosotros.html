@@ -9,35 +9,69 @@
     <!-- link boostrap -->
     <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
 
-
     <!-- linkear nuestro css -->
     <link rel="stylesheet" href="../css/style.css">
 
     <title>tienda - sobre-nosotros</title>
 </head>
 
-<body class="pagina-nosotros">
+<body class="body-nosotros">
 
     <!-- boostrap-sobre-nosotros-->
+    <div>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24"
+                        strokeWidth={1.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                    </svg>
 
-    <div class="menu-desplegable">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menu
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-            <li><a class="dropdown-item" href="./galeria.html">Galeria</a></li>
-            <li><a class="dropdown-item" href="./sobre-nosotros.html">Sobre-nosotros</a></li>
-            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
-            <li><a class="dropdown-item" href="./dificultades.html">Dificultades</a></li>
-        </ul>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Opciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mas opciones
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./sobre-nosotros.html">sobre-nosotros</a></li>
+                                    <li><a class="dropdown-item" href="./galeria.html">Galeria</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./dificultades.html">Dificultades</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 
     <main>
 
-        <h1 class="display-3">SOBRE-NOSOTROS</h1>
+        <h1 class="display-3 main-h1">SOBRE-NOSOTROS</h1>
 
-        <section class="info">
+        <section class="contenedor-section-parrafo">
 
             <p>¿Te imaginas un mundo sin energía eléctrica? ¿Cómo y quién se encargó de diseñar el sistema eléctrico que
                 hoy existe en el mundo y que nos brinda satisfactores, beneficios y comodidades? ¿Qué sería de nosotros
@@ -78,128 +112,128 @@
     </main>
 
     <!-- aplicando grid a sobre-nosotros -->
-    <main class="main-sobrenosotros">
+    <main>
         <!-- CONTAINER TESLA GALERIA 1 -->
         <div class="div_tesla-galeria">
-            <h1 style="background-color: rgb(0, 174, 255); border-radius: 4px;">TESLA HISTORIA</h1>
+            <h2 style="background-color: rgb(0, 174, 255); border-radius: 4px;">TESLA HISTORIA</h2>
         </div>
 
         <div>
             <section class="div_tesla_section">
                 <!-- items class -->
                 <!-- caja: una clase c1: otra clase -->
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img1.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img1.jpg" alt="imagen de torre tesla">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/Tesla-img2.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/Tesla-img2.jpg" alt="imagen de torre tesla azul">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img3.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img3.jpg" alt="imagen de Nikola tesla">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img4.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img4.jpg" alt="imagen de tesla y edison">
                 </div>
             </section>
 
             <section class="div_tesla_section">
                 <!-- items class -->
                 <!-- caja: una clase c1: otra clase -->
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesal-img5.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesal-img5.jpg" alt="imagen de maquina">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img6.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img6.jpg" alt="imagen de estatua de tesla">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesal-img7.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesal-img7.jpg" alt="imagen de casa con torre tesla">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img8.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img8.jpg" alt="imagen de fabrica">
                 </div>
             </section>
         </div>
         <!-- CONTAINER TESLA GALERIA 2 -->
 
         <div class="div_tesla-galeria">
-            <h1 style="background-color: chartreuse; border-radius: 4px;">TESLA MEMORIAS</h1>
+            <h3 style="background-color: chartreuse; border-radius: 4px;">TESLA MEMORIAS</h3>
         </div>
 
         <div>
             <section class="div_tesla_section">
                 <!-- items class -->
                 <!-- caja: una clase c1: otra clase -->
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img9.jpeg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img9.jpeg" alt="imagen sublime de tesla con sus inventos">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img10.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img10.jpg" alt="imagen de pensamientos de tesla">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img11.jpeg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img11.jpeg" alt="imagen de galaxia">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img12.jpeg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img12.jpeg" alt="imagen de invento de tesla con el sol">
                 </div>
             </section>
 
             <section class="div_tesla_section">
                 <!-- items class -->
                 <!-- caja: una clase c1: otra clase -->
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img13.jpeg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img13.jpeg" alt="imagen de tesla en una revista">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img14.jpeg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img14.jpeg" alt="imagen de frase de tesla">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img15.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img15.jpg" alt="imagen de una frase contundente">
                 </div>
-                <div class="caja tesla_section_caja">
-                    <img src="../multimedia/img/tesla-img16.jpg" alt="imagen">
+                <div class="caja-img tesla_section_caja">
+                    <img src="../multimedia/img/tesla-img16.jpg" alt="imagen de energia que invento tesla">
                 </div>
             </section>
         </div>
     </main>
 
-    <h1>Un video de la vida de Nikola Tesla</h1>
+    <h4>Un video de la vida de Nikola Tesla</h4>
 
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Q8FSoU9fpUs"
+    <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/Q8FSoU9fpUs"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
-        <footer>
-            <p>&copy; juan jose nina quempe</p>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="../multimedia/img/icons8-instagram.gif" class="d-block w-100" alt="logoinstagram">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://web.whatsapp.com/" target="_blank">
-                            <img src="../multimedia/img/icons8-whatsapp-50.png" class="d-block w-100" alt="logowhatsapp">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <img src="../multimedia/img/icons8-facebook-nuevo-50.png" class="d-block w-100"
-                                alt="logofacebook">
-                        </a>
-                    </div>
+    <footer>
+        <p>&copy; juan jose nina quempe</p>
+        <div id="carouselExample" class="carousel contenedor-div">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="../multimedia/img/icons8-instagram.gif" class="d-block w-100" alt="logoinstagram">
+                    </a>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../multimedia/img/icons8-whatsapp-50.png" class="d-block w-100" alt="logowhatsapp">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../multimedia/img/icons8-facebook-nuevo-50.png" class="d-block w-100"
+                            alt="logofacebook">
+                    </a>
+                </div>
             </div>
-        </footer>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previo</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Proximo</span>
+            </button>
+        </div>
+    </footer>
 
     <script src="../boostrap/js/bootstrap.bundle.min.js"></script>
 
