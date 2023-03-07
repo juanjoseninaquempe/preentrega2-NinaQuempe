@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <meta name="description" content="el veterano inventor llegó a recorrer Estados Unidos con la intención de demostrar la peligrosidad de la corriente alterna, para lo cual no dudó en electrocutar animales (desde perros y gatos hasta un elefante) para desacreditar la propuesta de Tesla.15 dic 2022">
+    <meta name="keywords" content="TESLA,ENERGIA INFINITA,TORRE TESLA,AUTOS TESLA,TESLA MOTORS,ENERGIA,INVERTIR EN TESLA DESDE AARGENTINA">
 
+    <!-- link bosstrap -->
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
     <!-- linkear nuestro css -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>tienda - inicio</title>
+    <title>TESLA- HOME</title>
 </head>
 
 <body>
@@ -18,15 +24,19 @@
         <img src="./multimedia/img/descarga.jpeg" alt="imagen de cohete">
         <h1 class="titulo-h1">COMPANIA TESLA</h1>
 
-        <nav>
-            <ul class="bloque-ul">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/galeria.html">Galeria</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre-nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/dificultades.html">dificultades</a></li>
-            </ul>
-        </nav>
+       <!-- boostrap-contacto-->
+    <div class="menu-desplegable-div">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="./pages/galeria.html">Galeria</a></li>
+            <li><a class="dropdown-item" href="./pages/sobre-nosotros.html">Sobre-nosotros</a></li>
+            <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+            <li><a class="dropdown-item" href="./pages/dificultades.html">Dificultades</a></li>
+        </ul>
+    </div>
     </header>
     <main>
         <section>
@@ -45,6 +55,8 @@
         </a>
     </footer>
 
+    <!-- link js -->
+<script src="./boostrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- link AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- link boostrap -->
     <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
 
     <!-- linkear nuestro css -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>tienda - sobre-nosotros</title>
+    <title>TESLA-SOBRE_NOSOTROS</title>
 </head>
 
 <body class="body-nosotros">
@@ -73,7 +76,7 @@
 
         <section class="contenedor-section-parrafo">
 
-            <p>¿Te imaginas un mundo sin energía eléctrica? ¿Cómo y quién se encargó de diseñar el sistema eléctrico que
+            <p class="section-parrafo-info-sobre " data-aos="flip-up" >¿Te imaginas un mundo sin energía eléctrica? ¿Cómo y quién se encargó de diseñar el sistema eléctrico que
                 hoy existe en el mundo y que nos brinda satisfactores, beneficios y comodidades? ¿Qué sería de nosotros
                 en estos años de modernidad si llegando la noche no pudiéramos disponer de la suave y protectora luz
                 eléctrica en nuestras casas?
@@ -196,7 +199,7 @@
         </div>
     </main>
 
-    <h4>Un video de la vida de Nikola Tesla</h4>
+    <h4 data-aos="flip-left">Un video de la vida de Nikola Tesla</h4>
 
     <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/Q8FSoU9fpUs"
         title="YouTube video player" frameborder="0"
@@ -234,6 +237,12 @@
             </button>
         </div>
     </footer>
+
+<!-- LINK AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
     <script src="../boostrap/js/bootstrap.bundle.min.js"></script>
 

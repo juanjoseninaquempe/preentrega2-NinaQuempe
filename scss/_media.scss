@@ -1,0 +1,39 @@
+/* mediaqueries contacto */
+
+@media  screen and (min-width:0px)and (max-width:480px) {
+    .contenedor-body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: black;
+        background-image: url(../multimedia/img/fondo-2.jpeg);
+        color: rgb(44, 70, 61);
+    }
+    }
+
+@media  screen and (min-width:960px)and (max-width:1328px) {
+    .contenedor-body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
+        color: aliceblue;
+    }
+}
+
+/* mediaqueries sobre-nosotros */
+
+@media  screen and (min-width:0px)and (max-width:480px) {
+    .body-nosotros {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: black;
+        background-image: url(../multimedia/img/fondo-2.jpeg);
+        color: rgb(44, 70, 61);
+    }
+}
+
+@media  screen and (min-width:960px)and (max-width:1328px) {
+    .body-nosotros {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
+        color: aliceblue;
+    }
+}

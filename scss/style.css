@@ -87,7 +87,6 @@ body {
 .contenedor-body {
   font-family: "Aboreto", cursive;
   background-color: aliceblue;
-  background-image: url(../multimedia/img/fondo-contacto.jpg);
 }
 
 .div-textarea {
@@ -128,7 +127,7 @@ body {
 /* parallax */
 .main-section2 {
   /* Imagen elegida */
-  background-image: url("../multimedia/img/img-comprimida.jpg");
+  background-image: url("../multimedia/img/210427134741-cnne-dinero-tesla-04272021-full-169.jpg");
   /* Definir un alto específico */
   height: 700px;
   /* Crear el efecto parallax al scrollear */
@@ -147,7 +146,7 @@ body {
 
 .main-section {
   /* Imagen elegida */
-  background-image: url("../multimedia/img/img-comprimida2.jpeg");
+  background-image: url("../multimedia/img/descarga (1).jpeg");
   /* Definir un alto específico */
   height: 700px;
   /* Crear el efecto parallax al scrollear */
@@ -194,21 +193,25 @@ h4 {
 
 .section-parrafo-info-sobre {
   font-family: "Crisis climática", cursiva;
-  animation-name: logo-energia;
 }
 
 /* modificando pagina de dificultades  */
 .main-section-parrafo {
+  background-color: rgb(173, 73, 73);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(8, 5, 1);
 }
 
 .main-section-ul {
   background-color: blueviolet;
-  background-image: url(../multimedia/img/img-comprimida3.jpg);
+  background-image: url(../multimedia/img/imagen-problemas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: bisque;
+}
+
+.section-parrafo-info-difi {
+  font-family: "Times New Roman", Times, serif;
 }
 
 main section ul li {
@@ -273,7 +276,8 @@ main section ul li {
 }
 
 .tesla_section_caja img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -302,143 +306,30 @@ main section ul li {
   font-weight: 6rem;
 }
 
-.main-bloque-parrafo-4 {
-  font-weight: 8rem;
+.icon-5px {
+  font-size: 5px;
 }
 
-.icon-14px {
-  font-size: 14px;
+.icon-30px {
+  font-size: 30px;
 }
 
-.icon-16px {
-  font-size: 16px;
+.icon-20px {
+  font-size: 20px;
 }
 
-.icon-21px {
-  font-size: 21px;
+.icon-10px {
+  font-size: 10px;
 }
 
-.icon-29px {
-  font-size: 29px;
-}
-
-.icon-32px {
-  font-size: 32px;
-}
-
-.blue, .icon-14px {
+.blue {
   color: blue;
 }
 
-.yellow, .icon-16px {
+.yellow {
   color: yellow;
 }
 
-.black, .icon-21px {
+.black {
   color: black;
-}
-
-.green, .icon-29px {
-  color: green;
-}
-
-.red, .icon-32px {
-  color: red;
-}
-
-.main-bloque-parrafo-1 {
-  background-color: green;
-  text-align: center;
-  padding: 1rem;
-}
-
-.main-bloque-parrafo-2 {
-  background-color: grey;
-}
-
-.main-bloque-parrafo-3 {
-  border: 20px solid rgb(206, 93, 162);
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px rgb(11, 164, 211);
-}
-
-.main-bloque-parrafo-4 {
-  border: 40px solid rgb(1, 0, 3);
-  border-radius: 40px;
-  box-shadow: 0px 0px 40px rgb(187, 48, 48);
-}
-
-.body-header-nav-dificultades {
-  display: block;
-  background-image: linear-gradient(64.5deg, rgb(245, 116, 185) 14.7%, rgb(89, 97, 223) 88.7%);
-  border-radius: 7px;
-  box-shadow: whitesmoke;
-}
-
-.body-header-nav-ul-dificultades {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.body-dificultades {
-  background-image: linear-gradient(358.4deg, rgb(249, 151, 119) -2.1%, rgb(98, 58, 162) 90%);
-}
-
-.btn {
-  width: 100px;
-  transition: width 2s;
-}
-
-.btn:hover {
-  width: 200px;
-}
-
-.main-section-ul {
-  animation-name: logo-energia;
-  animation-iteration-count: 3;
-  animation-timing-function: ease-in-out;
-  animation-duration: 2s;
-  animation-delay: 1s;
-}
-
-@keyframes logo-energia {
-  0% {
-    height: 600px;
-  }
-  25% {
-    height: 700px;
-  }
-  50% {
-    height: 800px;
-  }
-  75% {
-    height: 900px;
-  }
-  100% {
-    height: 910px;
-  }
-}
-.logo-dificultades {
-  animation-name: logo;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
-}
-
-@keyframes logo {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.lo {
-  animation-name: bounce;
-  animation-duration: 8ss;
-  animation-delay: 7s;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

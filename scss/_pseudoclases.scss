@@ -1,0 +1,23 @@
+/* pseudoclases */
+
+a:hover {
+    background: #a35959;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+a:active {
+    background: #609e74;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+        color: pink;
+ }
