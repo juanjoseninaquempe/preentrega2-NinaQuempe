@@ -57,6 +57,10 @@ a:visited {
     color: aliceblue;
   }
 }
+.body-header-div-index {
+  margin-top: 100px;
+}
+
 .cabezera-header {
   background-color: rgb(92, 71, 71);
 }
@@ -84,9 +88,15 @@ body {
 }
 
 /* modificamos con tipografias + box-modeling el archivo contacto */
+.main-h1-contacto {
+  margin-top: 100px;
+}
+
 .contenedor-body {
+  color: white;
   font-family: "Aboreto", cursive;
   background-color: aliceblue;
+  background-image: url(../multimedia/img/fondo-contacto.jpg);
 }
 
 .div-textarea {
@@ -127,7 +137,7 @@ body {
 /* parallax */
 .main-section2 {
   /* Imagen elegida */
-  background-image: url("../multimedia/img/210427134741-cnne-dinero-tesla-04272021-full-169.jpg");
+  background-image: url("../multimedia/img/img-comprimida.jpg");
   /* Definir un alto específico */
   height: 700px;
   /* Crear el efecto parallax al scrollear */
@@ -141,12 +151,13 @@ body {
 }
 
 .logo-footer {
+  color: white;
   text-align: end;
 }
 
 .main-section {
   /* Imagen elegida */
-  background-image: url("../multimedia/img/descarga (1).jpeg");
+  background-image: url("../multimedia/img/img-comprimida2.jpeg");
   /* Definir un alto específico */
   height: 700px;
   /* Crear el efecto parallax al scrollear */
@@ -158,7 +169,7 @@ body {
   padding: 50px 30px;
   margin-bottom: 50px;
   /* definir color de letra */
-  color: aliceblue;
+  color: aqua;
 }
 
 /* modificamos Sobre-nosotros */
@@ -193,31 +204,25 @@ h4 {
 
 .section-parrafo-info-sobre {
   font-family: "Crisis climática", cursiva;
+  animation-name: logo-energia;
 }
 
 /* modificando pagina de dificultades  */
 .main-section-parrafo {
-  background-color: rgb(173, 73, 73);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(8, 5, 1);
 }
 
 .main-section-ul {
-  background-color: blueviolet;
-  background-image: url(../multimedia/img/imagen-problemas.jpg);
+  background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: bisque;
-}
-
-.section-parrafo-info-difi {
-  font-family: "Times New Roman", Times, serif;
 }
 
 main section ul li {
   font-size: 25px;
-  color: rgb(146, 146, 209);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* segunda preentrega */
@@ -290,7 +295,7 @@ main section ul li {
 }
 
 .main-section {
-  color: maroon;
+  color: rgb(238, 238, 238);
   font-size: larger;
 }
 
@@ -306,30 +311,143 @@ main section ul li {
   font-weight: 6rem;
 }
 
-.icon-5px {
-  font-size: 5px;
+.main-bloque-parrafo-4 {
+  font-weight: 8rem;
 }
 
-.icon-30px {
-  font-size: 30px;
+.icon-14px {
+  font-size: 14px;
 }
 
-.icon-20px {
-  font-size: 20px;
+.icon-16px {
+  font-size: 16px;
 }
 
-.icon-10px {
-  font-size: 10px;
+.icon-21px {
+  font-size: 21px;
 }
 
-.blue {
+.icon-29px {
+  font-size: 29px;
+}
+
+.icon-32px {
+  font-size: 32px;
+}
+
+.blue, .icon-14px {
   color: blue;
 }
 
-.yellow {
+.yellow, .icon-16px {
   color: yellow;
 }
 
-.black {
+.black, .icon-21px {
   color: black;
+}
+
+.green, .icon-29px {
+  color: green;
+}
+
+.red, .icon-32px {
+  color: red;
+}
+
+.main-bloque-parrafo-1 {
+  background-color: green;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-bloque-parrafo-2 {
+  background-color: grey;
+}
+
+.main-bloque-parrafo-3 {
+  border: 20px solid rgb(206, 93, 162);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(11, 164, 211);
+  background-color: black;
+}
+
+.main-bloque-parrafo-4 {
+  border: 40px solid rgb(1, 0, 3);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgb(187, 48, 48);
+  background-color: black;
+}
+
+.body-header-nav-dificultades {
+  display: block;
+  background-image: linear-gradient(64.5deg, rgb(245, 116, 185) 14.7%, rgb(89, 97, 223) 88.7%);
+  border-radius: 7px;
+  box-shadow: whitesmoke;
+}
+
+.body-header-nav-ul-dificultades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.body-dificultades {
+  background-image: linear-gradient(358.4deg, rgb(249, 151, 119) -2.1%, rgb(98, 58, 162) 90%);
+}
+
+.btn {
+  width: 100px;
+  transition: width 2s;
+}
+
+.btn:hover {
+  width: 200px;
+}
+
+.main-section-ul {
+  animation-name: logo-energia;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes logo-energia {
+  0% {
+    height: 600px;
+  }
+  25% {
+    height: 700px;
+  }
+  50% {
+    height: 800px;
+  }
+  75% {
+    height: 900px;
+  }
+  100% {
+    height: 910px;
+  }
+}
+.logo-dificultades {
+  animation-name: logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.lo {
+  animation-name: bounce;
+  animation-duration: 8ss;
+  animation-delay: 7s;
 }/*# sourceMappingURL=style.css.map */

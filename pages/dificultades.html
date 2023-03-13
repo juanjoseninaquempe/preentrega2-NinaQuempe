@@ -23,19 +23,63 @@
 </head>
 
 <body class="body-dificultades">
-    <header >
-        <nav class="body-header-nav-dificultades">
-            <ul class="body-header-nav-ul-dificultades">
-                <img class="logo-dificultades" src="../multimedia/img/logo-dificultades2.png" alt="">
-                <li><a href="../index.html">Inicio</a></li>
 
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre-nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./dificultades.html">Dificultades</a></li>
-            </ul>
+    <header>
 
+    <div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+
+            <div class="container">
+        <img class="logo-dificultades" src="../multimedia/img/logo-dificultades2.png" alt="logoderuedagiratoria">
+
+                <a class="navbar-brand" href="../index.html">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24"
+                        strokeWidth={1.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                    </svg>
+
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Opciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mas opciones
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./sobre-nosotros.html">sobre-nosotros</a></li>
+                                    <li><a class="dropdown-item" href="./galeria.html">Galeria</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./dificultades.html">Dificultades</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
+
+    </div>
+
 
     </header>
 
@@ -48,7 +92,7 @@
         </section>
         <section class="  main-section-ul">
             <ul class="animate__animated animate__headShake lo">
-                <li>En los años 30, mientras Tesla vivía en Nueva York y se alojaba en el hotel Waldorf Astoria, llegó a
+                <li> En los años 30, mientras Tesla vivía en Nueva York y se alojaba en el hotel Waldorf Astoria, llegó a
                     acumular una considerable deuda de unos 10.000 dólares.
 
                     Para afrontar el pago, Tesla ofreció a los dueños del hotel una de las mayores joyas que podía
@@ -92,7 +136,7 @@
     </footer>
    
     <main >
-    <button  type="button" class="btn btn-dark" >Padre de la energia aleterna: TESLA</button>
+    <button  type="button" class="btn btn-dark" >Padre de la energia alterna: TESLA</button>
     </main>
 
 <!-- link AOS -->

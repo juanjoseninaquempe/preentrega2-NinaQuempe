@@ -1,39 +1,176 @@
-/* mediaqueries contacto */
-
-@media  screen and (min-width:0px)and (max-width:480px) {
-    .contenedor-body{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: black;
-        background-image: url(../multimedia/img/fondo-2.jpeg);
-        color: rgb(44, 70, 61);
-    }
-    }
-
-@media  screen and (min-width:960px)and (max-width:1328px) {
-    .contenedor-body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: aquamarine;
-        background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
-        color: aliceblue;
-    }
-}
 
 /* mediaqueries sobre-nosotros */
 
-@media  screen and (min-width:0px)and (max-width:480px) {
+@media  screen and (max-width:760px) {
     .body-nosotros {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: black;
         background-image: url(../multimedia/img/fondo-2.jpeg);
-        color: rgb(44, 70, 61);
     }
+        .main-sobre-nosotros {
+        color: rgb(44, 70, 61);
+        }
+    /* aplicando boostrap,flexbox,responsive a sobre-nosotros */
+
+/* grid-sobre-nosotros */
+
+/* -------------------------------- GALERIA.HTML -------------------------------- */
+/* ~~~~~ MAIN ~~~~~ */
+.div_tesla-galeria{
+    padding: 10px;
 }
 
-@media  screen and (min-width:960px)and (max-width:1328px) {
-    .body-nosotros {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: aquamarine;
-        background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
-        color: aliceblue;
-    }
+.div_tesla-galeria h1{
+    text-align: center;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    position: relative;
+    background-color: white;
+}
+/* 
+.div_argentina_title h1:hover{
+    background-color: darkcyan;
+} */
+
+.div_tesla_section{
+    /* padding: 10px; */
+    /* margin: 10px; */
+    height: auto;
+
+    /* -+- Propiedades de la caja -+- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}   
+
+
+.tesla_section_caja{
+    flex-grow: 3;
+}
+
+.tesla_section_caja img{
+    object-fit: cover;
+    width: 100%;
+    height: 100% ;
+}
+
+/* ~ CAJA HIJOS ~ */
+.caja-img{
+    width: 120px;
+    height: 250px;
+    margin: 5px;
+}
+.contenedor-section-parrafo {
+    font-size: larger;
+	padding: 10px 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+#video-iframe {
+    display: block;
+    margin: 50px;
+   
+}
+
+.main-h1 {
+    padding-top: 100px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.section-parrafo-info-sobre {
+    font-family: $font-secundaria ;animation-name: logo-energia;
+}
+
+/* mediaqueries contacto */
+
+.contenedor-body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../multimedia/img/fondo-2.jpeg);
+    background-size: cover;
+
+}
+
+/* modificamos con tipografias + box-modeling el archivo contacto */
+
+.main-h1-contacto{
+    color: whitesmoke;
+    margin-top: 100px;
+}
+
+.div-textarea {
+    color: whitesmoke;
+    border: dashed 2px rgb(49, 44, 17);
+    display: inline-block;
+    background-color: rgb(172, 117, 45);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 100px;
+    width: 400px;
+   
+}
+
+.titulo-h1 {
+    color: bisque;
+    text-decoration:none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.cont li {
+    color: antiquewhite;
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    font-size: 2rem;
+}
+
+.div-input {
+    color: antiquewhite;
+
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.seleccion-label {
+    color: antiquewhite;
+
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+/* aplicando boostrap a contacto */
+
+.menu-desplegable-div {
+    color: antiquewhite;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contenedor-div {
+    color: antiquewhite;
+
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
 }

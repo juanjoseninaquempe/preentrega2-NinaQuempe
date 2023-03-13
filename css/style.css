@@ -23,40 +23,151 @@ a:visited {
   color: pink;
 }
 
-/*variables globales*/ /* mediaqueries contacto */
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  .contenedor-body {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: black;
-    background-image: url(../multimedia/img/fondo-2.jpeg);
-    color: rgb(44, 70, 61);
-  }
-}
-@media screen and (min-width: 960px) and (max-width: 1328px) {
-  .contenedor-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
-    background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
-    color: aliceblue;
-  }
-}
+/*variables globales*/
 /* mediaqueries sobre-nosotros */
-@media screen and (min-width: 0px) and (max-width: 480px) {
+@media screen and (max-width: 760px) {
   .body-nosotros {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     background-color: black;
     background-image: url(../multimedia/img/fondo-2.jpeg);
+  }
+  .main-sobre-nosotros {
     color: rgb(44, 70, 61);
   }
-}
-@media screen and (min-width: 960px) and (max-width: 1328px) {
-  .body-nosotros {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
-    background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
-    color: aliceblue;
+  /* aplicando boostrap,flexbox,responsive a sobre-nosotros */
+  /* grid-sobre-nosotros */
+  /* -------------------------------- GALERIA.HTML -------------------------------- */
+  /* ~~~~~ MAIN ~~~~~ */
+  .div_tesla-galeria {
+    padding: 10px;
+  }
+  .div_tesla-galeria h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    position: relative;
+    background-color: white;
+  }
+  /* 
+  .div_argentina_title h1:hover{
+      background-color: darkcyan;
+  } */
+  .div_tesla_section {
+    /* padding: 10px; */
+    /* margin: 10px; */
+    height: auto;
+    /* -+- Propiedades de la caja -+- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .tesla_section_caja {
+    flex-grow: 3;
+  }
+  .tesla_section_caja img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  /* ~ CAJA HIJOS ~ */
+  .caja-img {
+    width: 120px;
+    height: 250px;
+    margin: 5px;
+  }
+  .contenedor-section-parrafo {
+    font-size: larger;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #video-iframe {
+    display: block;
+    margin: 50px;
+  }
+  .main-h1 {
+    padding-top: 100px;
+  }
+  .navbar-toggler {
+    border: none !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  h4 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+  }
+  .section-parrafo-info-sobre {
+    font-family: "Crisis climática", cursiva;
+    animation-name: logo-energia;
+  }
+  /* mediaqueries contacto */
+  .contenedor-body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-image: url(../multimedia/img/fondo-2.jpeg);
+    background-size: cover;
+  }
+  /* modificamos con tipografias + box-modeling el archivo contacto */
+  .main-h1-contacto {
+    color: whitesmoke;
+    margin-top: 100px;
+  }
+  .div-textarea {
+    color: whitesmoke;
+    border: dashed 2px rgb(49, 44, 17);
+    display: inline-block;
+    background-color: rgb(172, 117, 45);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 100px;
+    width: 400px;
+  }
+  .titulo-h1 {
+    color: bisque;
+    text-decoration: none;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+  .cont li {
+    color: antiquewhite;
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    font-size: 2rem;
+  }
+  .div-input {
+    color: antiquewhite;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .seleccion-label {
+    color: antiquewhite;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  /* aplicando boostrap a contacto */
+  .menu-desplegable-div {
+    color: antiquewhite;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .contenedor-div {
+    color: antiquewhite;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 100px;
   }
 }
+.body-header-div-index {
+  margin-top: 100px;
+}
+
 .cabezera-header {
   background-color: rgb(92, 71, 71);
 }
@@ -84,10 +195,15 @@ body {
 }
 
 /* modificamos con tipografias + box-modeling el archivo contacto */
+.main-h1-contacto {
+  margin-top: 100px;
+}
+
 .contenedor-body {
+  color: rgb(0, 0, 0);
   font-family: "Aboreto", cursive;
   background-color: aliceblue;
-  background-image: url(../multimedia/img/fondo-contacto.jpg);
+  background-size: cover;
 }
 
 .div-textarea {
@@ -142,6 +258,7 @@ body {
 }
 
 .logo-footer {
+  color: white;
   text-align: end;
 }
 
@@ -159,7 +276,7 @@ body {
   padding: 50px 30px;
   margin-bottom: 50px;
   /* definir color de letra */
-  color: aliceblue;
+  color: aqua;
 }
 
 /* modificamos Sobre-nosotros */
@@ -201,20 +318,19 @@ h4 {
 .main-section-parrafo {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(8, 5, 1);
+  margin-top: 100px;
 }
 
 .main-section-ul {
-  background-color: blueviolet;
-  background-image: url(../multimedia/img/img-comprimida3.jpg);
+  background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: bisque;
 }
 
 main section ul li {
   font-size: 25px;
-  color: rgb(146, 146, 209);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* segunda preentrega */
@@ -232,7 +348,7 @@ main section ul li {
 
 /* aplicando boostrap,flexbox,responsive a sobre-nosotros */
 .body-nosotros {
-  background-color: antiquewhite;
+  background-color: rgb(204, 127, 25);
 }
 
 /* grid-sobre-nosotros */
@@ -286,7 +402,7 @@ main section ul li {
 }
 
 .main-section {
-  color: maroon;
+  color: rgb(238, 238, 238);
   font-size: larger;
 }
 
@@ -360,26 +476,14 @@ main section ul li {
   border: 20px solid rgb(206, 93, 162);
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgb(11, 164, 211);
+  background-color: black;
 }
 
 .main-bloque-parrafo-4 {
   border: 40px solid rgb(1, 0, 3);
   border-radius: 40px;
   box-shadow: 0px 0px 40px rgb(187, 48, 48);
-}
-
-.body-header-nav-dificultades {
-  display: block;
-  background-image: linear-gradient(64.5deg, rgb(245, 116, 185) 14.7%, rgb(89, 97, 223) 88.7%);
-  border-radius: 7px;
-  box-shadow: whitesmoke;
-}
-
-.body-header-nav-ul-dificultades {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  background-color: black;
 }
 
 .body-dificultades {

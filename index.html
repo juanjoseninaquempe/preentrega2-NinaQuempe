@@ -21,26 +21,67 @@
 <body>
 
     <header class="cabezera-header">
-        <img src="./multimedia/img/descarga.jpeg" alt="imagen de cohete">
-        <h1 class="titulo-h1">COMPANIA TESLA</h1>
+        <div class="body-header-div-index">
+        <h1 class="titulo-h1">COMPAÑIA TESLA</h1>
+       </div>
+          <!-- boostrap-index-->
+    <div>
 
-       <!-- boostrap-contacto-->
-    <div class="menu-desplegable-div">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menu
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
-            <li><a class="dropdown-item" href="./pages/galeria.html">Galeria</a></li>
-            <li><a class="dropdown-item" href="./pages/sobre-nosotros.html">Sobre-nosotros</a></li>
-            <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
-            <li><a class="dropdown-item" href="./pages/dificultades.html">Dificultades</a></li>
-        </ul>
+        <img src="./multimedia/img/descarga.jpeg" alt="imagen de cohete">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+
+            <div class="container">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24"
+                        strokeWidth={1.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                    </svg>
+
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Opciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mas opciones
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./pages/sobre-nosotros.html">sobre-nosotros</a></li>
+                                    <li><a class="dropdown-item" href="./pages/galeria.html">Galeria</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./pages/dificultades.html">Dificultades</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
     </div>
+
     </header>
     <main>
         <section>
-            <h2>ubicacion</h2>
+            <h2 class="bg-light">ubicacion</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13789.95374841995!2d-97.61858!3d30.2231449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fa2f52726e62dea!2sTesla%20Giga%20Texas!5e0!3m2!1ses-419!2sbo!4v1674678982045!5m2!1ses-419!2sbo"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -48,7 +89,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="logo-footer">
         <p>&copy; juan jose nina quempe</p>
         <a href="https://instagram.com" target="_blank">
             <img src="./multimedia/img/icons8-instagram.gif" alt="logo de instagram">

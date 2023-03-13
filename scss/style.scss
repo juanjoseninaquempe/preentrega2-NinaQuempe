@@ -4,6 +4,10 @@
 @import "media";
 @import url('https://fonts.googleapis.com/css2? family= Climate+Crisis & display=swap');
 
+.body-header-div-index {
+    margin-top: 100px;
+}
+
 .cabezera-header {
     background-color: rgb(92, 71, 71);
 }
@@ -33,11 +37,18 @@ body {
 
 /* modificamos con tipografias + box-modeling el archivo contacto */
 
-.contenedor-body {
-         font-family: 'Aboreto', cursive;
-         background-color: aliceblue;
-         background-image: url(../multimedia/img/fondo-contacto.jpg);
+.main-h1-contacto{
+    margin-top: 100px;
 }
+
+.contenedor-body {
+        color: rgb(0, 0, 0);
+        font-family: 'Aboreto', cursive;
+        background-color: aliceblue;
+        background-size: cover;
+
+}
+
 
 .div-textarea {
     border: dashed 2px rgb(49, 44, 17);
@@ -99,12 +110,14 @@ body {
 }
 
 .logo-footer {
+    color: white;
     text-align: end;
 }
 
 .main-section {
 	/* Imagen elegida */
-	background-image: url("../multimedia/img/img-comprimida2.jpeg");
+    
+	 background-image: url("../multimedia/img/img-comprimida2.jpeg");
 
 	/* Definir un alto específico */
 	height: 700px;
@@ -120,7 +133,7 @@ body {
 	margin-bottom: 50px;
     
     /* definir color de letra */
-    color: aliceblue;
+    color: aqua;
 }
 
 /* modificamos Sobre-nosotros */
@@ -164,14 +177,13 @@ h4 {
 .main-section-parrafo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(8, 5, 1);
+    margin-top: 100px;
 }
 
 .main-section-ul{
-    background-color: blueviolet;
-    background-image: url(../multimedia/img/img-comprimida3.jpg);
+    background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
     background-repeat: no-repeat;
 	background-size: cover;
-    color: bisque;
 }
 
 
@@ -180,8 +192,8 @@ main {
     section {
         ul {
             li {
-                font-size: $relleno;
-                color: $colores-back;
+                 font-size: $relleno;
+                 color: $colores-back;
                 font-family: $font-tercera;
             }
         }
@@ -206,7 +218,7 @@ main {
 /* aplicando boostrap,flexbox,responsive a sobre-nosotros */
 
 .body-nosotros {
-    background-color: antiquewhite;
+    background-color: rgb(204, 127, 25);
 }
 
 /* grid-sobre-nosotros */
@@ -267,7 +279,7 @@ $color: blue;
 
 .main-section {
             @if ($color==blue ){
-                color: maroon;
+                color: rgb(238, 238, 238);
                 font-size: larger;
         } @else if ($color==red){
                 color:beige;
@@ -343,40 +355,24 @@ $estilos: (
    
 // MIXINS
 
-@mixin crearbordes($shadow,$colour,$size2) {
+@mixin crearbordes($shadow,$colour,$size2,$fondot) {
     border: $size2 solid $shadow;
     border-radius: $size2;
     box-shadow: 0px 0px $size2 $colour;
+    background-color: $fondot;
 }
 
 .main-bloque-parrafo-3 {
-    @include crearbordes(rgb(206, 93, 162),rgb(11, 164, 211),20px);
+    @include crearbordes(rgb(206, 93, 162),rgb(11, 164, 211),20px,black);
 }
 
 .main-bloque-parrafo-4 {
-    @include crearbordes(rgb(1, 0, 3),rgb(187, 48, 48) ,40px);
+    @include crearbordes(rgb(1, 0, 3),rgb(187, 48, 48) ,40px,black);
 }
 
-.body-header-nav-dificultades {
-     display: block;
-    // flex-direction: row;
-    // justify-content: space-around;
-    // align-items: center;
-    // background-image: radial-gradient(circle,green,black);
-    background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
-    border-radius:7px;
-    box-shadow: whitesmoke;
-}
-
-.body-header-nav-ul-dificultades {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .body-dificultades {
-    background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+ background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
 }
 
 .btn {
