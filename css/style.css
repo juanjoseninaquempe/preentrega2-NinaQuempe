@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* pseudoclases */
+@import url("https://fonts.googleapis.com/css2? family= Oswald:wght@200 & display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Climate+Crisis & display=swap");
 a:hover {
   background: #a35959;
@@ -16,7 +17,30 @@ a:active {
 }
 
 a:link {
-  color: yellow;
+  color: green;
+}
+
+a:visited {
+  color: pink;
+}
+
+/*variables globales*/ /* pseudoclases */
+a:hover {
+  background: #a35959;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
+a:active {
+  background: #609e74;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+a:link {
+  color: green;
 }
 
 a:visited {
@@ -88,7 +112,14 @@ a:visited {
     display: block;
     margin: 50px;
   }
+  .h4-subti {
+    color: yellow;
+  }
+  .footer-sobre-nos {
+    color: yellow;
+  }
   .main-h1 {
+    color: greenyellow;
     padding-top: 100px;
   }
   .navbar-toggler {
@@ -109,7 +140,7 @@ a:visited {
   /* mediaqueries contacto */
   .contenedor-body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-image: url(../multimedia/img/fondo-2.jpeg);
+    background-image: url(../multimedia/img/tesla-fondo-10.jpg);
     background-size: cover;
   }
   /* modificamos con tipografias + box-modeling el archivo contacto */
@@ -163,18 +194,67 @@ a:visited {
     margin-bottom: 20px;
     width: 100px;
   }
+  .main-bloque-parrafo-1 {
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+  }
+  .main-bloque-parrafo-2 {
+    background-image: linear-gradient(171.8deg, rgb(5, 111, 146) 13.5%, rgb(6, 57, 84) 78.6%);
+  }
+  .main-bloque-parrafo-3 {
+    background-image: linear-gradient(65.9deg, rgb(85, 228, 224) 5.5%, rgba(75, 68, 224, 0.74) 54.2%, rgb(64, 198, 238) 55.2%, rgb(177, 36, 224) 98.4%);
+  }
+  .main-bloque-parrafo-4 {
+    background-image: radial-gradient(circle 597px at 93% 9.8%, rgb(255, 61, 89) 1.7%, rgb(252, 251, 44) 97%);
+  }
+  .icon-29px {
+    background-image: linear-gradient(122.3deg, rgb(111, 71, 133) 14.6%, rgb(232, 129, 166) 29.6%, rgb(237, 237, 183) 42.1%, rgb(244, 166, 215) 56.7%, rgb(154, 219, 232) 68.7%, rgb(238, 226, 159) 84.8%);
+  }
+  .container {
+    background-image: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+  }
+  .main-section-parrafo {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 5, 1);
+    margin-top: 100px;
+  }
+  .main-section-ul {
+    background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    border-style: double;
+    border-color: yellow;
+  }
+  main section {
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+  }
+  main section ul li {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+  }
+  .section-parrafo-dif {
+    color: #d76d77;
+  }
+  .container {
+    border-style: double;
+    border: #d76d77 solid green;
+  }
+  .body-index {
+    background-image: url(../multimedia/img/tesla-imperio.jpg);
+  }
 }
 .body-header-div-index {
   margin-top: 100px;
 }
 
-.cabezera-header {
-  background-color: rgb(92, 71, 71);
-}
-
 .titulo-h1 {
   text-align: center;
   font-size: 50px;
+  color: maroon;
 }
 
 a {
@@ -330,7 +410,7 @@ h4 {
 main section ul li {
   font-size: 25px;
   color: rgb(255, 255, 255);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /* segunda preentrega */
@@ -446,20 +526,40 @@ main section ul li {
   color: blue;
 }
 
-.yellow, .icon-16px {
-  color: yellow;
+.purple, .icon-16px {
+  color: purple;
 }
 
 .black, .icon-21px {
   color: black;
 }
 
-.green, .icon-29px {
-  color: green;
+.white, .icon-29px {
+  color: white;
 }
 
-.red, .icon-32px {
-  color: red;
+.grey, .icon-32px {
+  color: grey;
+}
+
+.icon-14px {
+  background-color: white;
+}
+
+.icon-16px {
+  background-color: gold;
+}
+
+.icon-21px {
+  background-color: red;
+}
+
+.icon-29px {
+  background-color: black;
+}
+
+.icon-32px {
+  background-color: blue;
 }
 
 .main-bloque-parrafo-1 {
@@ -503,7 +603,7 @@ main section ul li {
   animation-name: logo-energia;
   animation-iteration-count: 3;
   animation-timing-function: ease-in-out;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 1s;
 }
 
@@ -528,7 +628,7 @@ main section ul li {
   animation-name: logo;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes logo {
@@ -541,7 +641,7 @@ main section ul li {
 }
 .lo {
   animation-name: bounce;
-  animation-duration: 8ss;
+  animation-duration: 8s;
   animation-delay: 7s;
 }
 

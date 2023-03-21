@@ -8,14 +8,10 @@
     margin-top: 100px;
 }
 
-.cabezera-header {
-    background-color: rgb(92, 71, 71);
-}
-
-
 .titulo-h1 {
     text-align: center;
     font-size: 50px;
+    color: maroon;
 }
 
 a {
@@ -200,6 +196,7 @@ main {
     }
 }
 
+
 /* segunda preentrega */
 
 /* aplicando boostrap a contacto */
@@ -308,30 +305,35 @@ $color: blue;
     }
    }
 
-@each $color in blue,yellow,black,green,red {
+@each $color in blue,purple,black,white,grey {
     .#{$color}{
         color:#{$color}
     }
 }
 
 .icon-14px {
+    background-color: white;
     @extend .blue;
 }
 
 .icon-16px {
-    @extend .yellow;
+    background-color: gold;
+    @extend .purple;
 }
 
 .icon-21px {
+    background-color: red;
     @extend .black;
 }
 
 .icon-29px {
-    @extend .green;
+    background-color: black;
+    @extend .white;
 }
 
 .icon-32px {
-    @extend .red;
+    background-color: blue;
+    @extend .grey;
 }
 
 // MAPS
@@ -390,7 +392,7 @@ $estilos: (
     animation-name: logo-energia;
     animation-iteration-count: 3;
     animation-timing-function: ease-in-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
     // cuando arranca
     animation-delay: 1s;
  }
@@ -418,7 +420,7 @@ $estilos: (
     animation-name: logo;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
  
 @keyframes logo {
@@ -432,6 +434,6 @@ $estilos: (
 
 .lo {
     animation-name: bounce;
-    animation-duration: 8ss;
+    animation-duration: 8s;
     animation-delay: 7s;
 }

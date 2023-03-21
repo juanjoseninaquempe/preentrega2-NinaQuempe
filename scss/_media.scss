@@ -1,4 +1,6 @@
-
+@import "pseudoclases";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@200 & display=swap');
 /* mediaqueries sobre-nosotros */
 
 @media  screen and (max-width:760px) {
@@ -75,8 +77,16 @@
     margin: 50px;
    
 }
+.h4-subti {
+    color: yellow;
+}
+
+.footer-sobre-nos {
+    color: yellow;
+}
 
 .main-h1 {
+    color: greenyellow;
     padding-top: 100px;
 }
 
@@ -102,7 +112,7 @@ h4 {
 
 .contenedor-body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(../multimedia/img/fondo-2.jpeg);
+    background-image: url(../multimedia/img/tesla-fondo-10.jpg);
     background-size: cover;
 
 }
@@ -171,6 +181,75 @@ h4 {
     margin-left: 50px;
     margin-bottom: 20px;
     width: 100px;
+}
+// media queries galeria
+
+.main-bloque-parrafo-1{
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+}
+
+.main-bloque-parrafo-2 {
+    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+}
+
+.main-bloque-parrafo-3 {
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+}
+
+.main-bloque-parrafo-4 {
+    background-image: radial-gradient( circle 597px at 93% 9.8%,  rgba(255,61,89,1) 1.7%, rgba(252,251,44,1) 97% );
+}
+
+.icon-29px {
+    background-image: linear-gradient( 122.3deg,  rgba(111,71,133,1) 14.6%, rgba(232,129,166,1) 29.6%, rgba(237,237,183,1) 42.1%, rgba(244,166,215,1) 56.7%, rgba(154,219,232,1) 68.7%, rgba(238,226,159,1) 84.8% );
+}
+
+
+// media queries dificultades
+
+.container {
+    background-image: linear-gradient( 110.1deg,  rgba(34,126,34,1) 2.9%, rgba(168,251,60,1) 90.3% );
+}
+.main-section-parrafo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 5, 1);
+    margin-top: 100px;
+}
+
+.main-section-ul{
+    background-image: url(../multimedia/img/fondo-de-pantalla.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+// media querie de index
+main {
+    border-style: double;
+    border-color: yellow;
+    section {
+        display: flex;
+        justify-content: center;
+        border-style: groove;
+        ul {
+            li {
+                 font-size: $relleno;
+                 color: $colores-back;
+                font-family: $font-tercera;
+            }
+        }
+    }
+}
+
+.section-parrafo-dif {
+    color: #d76d77;
+}
+
+.container {
+    border-style: double ;
+    border: #d76d77 solid green;
+}
+.body-index {
+    background-image: url(../multimedia/img/tesla-imperio.jpg);
 }
 
 }
